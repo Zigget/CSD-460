@@ -1,0 +1,460 @@
+/* ======================
+   Global Styling
+====================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Segoe UI", sans-serif;
+
+    background-color: #f5f7fa;
+
+    color: #333;
+
+    line-height: 1.6;
+}
+
+/* ======================
+   Navigation
+====================== */
+
+.navbar {
+
+    background: rgba(0, 0, 0, 0.7);
+
+    backdrop-filter: blur(10px);
+
+    padding: 15px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.navbar h2 {
+
+    color: white;
+}
+
+.navbar ul {
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+.navbar a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.navbar a:hover {
+
+    color: #76c893;
+}
+
+/* ======================
+   Hero Section
+====================== */
+
+.hero-section {
+
+    height: 100vh;
+
+    background:
+            linear-gradient(
+                    rgba(0,0,0,.50),
+                    rgba(0,0,0,.50)
+            ),
+
+            url("../images/lodge-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+
+    max-width: 800px;
+
+    color: white;
+
+    padding: 20px;
+}
+
+.hero-content h1 {
+
+    font-size: 4rem;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+
+    font-size: 1.3rem;
+
+    margin-bottom: 30px;
+}
+
+/* ======================
+   Buttons
+====================== */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-guest {
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn-primary {
+
+    background: #2d6a4f;
+
+    color: white;
+}
+
+.btn-primary:hover {
+
+    background: #1b4332;
+}
+
+.btn-secondary {
+
+    background: white;
+
+    color: #1b4332;
+}
+
+.btn-secondary:hover {
+
+    background: #ddd;
+}
+
+.btn-guest {
+
+    background: #40916c;
+
+    color: white;
+}
+
+.btn-guest:hover {
+
+    background: #2d6a4f;
+}
+
+/* ======================
+   Main Sections
+====================== */
+
+.content-section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.content-section h2 {
+
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+
+    color: #1b4332;
+}
+
+.content-section p {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+/* ======================
+   Service Cards
+====================== */
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns:
+            repeat(auto-fit,
+                    minmax(250px,1fr));
+
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.service-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow:
+            0 4px 15px rgba(
+                    0,
+                    0,
+                    0,
+                    0.1);
+
+    transition: .3s;
+}
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+
+    color: #2d6a4f;
+
+    margin-bottom: 10px;
+}
+
+/* ======================
+   Features List
+====================== */
+
+.feature-list {
+
+    list-style: none;
+
+    margin-top: 20px;
+}
+
+.feature-list li {
+
+    margin: 12px 0;
+
+    font-size: 1.1rem;
+}
+
+/* ======================
+   Footer
+====================== */
+
+.footer {
+
+    background: #1b4332;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+/* ======================
+   Login/Register Pages
+====================== */
+
+.login-page {
+
+    background:
+            linear-gradient(
+                    rgba(0,0,0,.40),
+                    rgba(0,0,0,.40)
+            ),
+
+            url("../images/lodge-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.login-container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.glass-card {
+
+    width: 450px;
+
+    padding: 40px;
+
+    background:
+            rgba(255,255,255,.15);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 32px rgba(
+                0,
+                0,
+                0,
+                0.3);
+
+    color: white;
+}
+
+/* ======================
+   Forms
+====================== */
+
+.form-group {
+
+    margin-bottom: 18px;
+}
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: 600;
+}
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+}
+
+button {
+
+    border: none;
+
+    cursor: pointer;
+}
+
+/* ======================
+   Messages
+====================== */
+
+.error-message {
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.success-message {
+
+    background: #d1fae5;
+
+    color: #065f46;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+/* ======================
+   Mobile
+====================== */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .glass-card {
+
+        width: 90%;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+}
