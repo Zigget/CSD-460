@@ -25,7 +25,7 @@ public class DBConnection {
     private static final String USER = "root";
 
     // MySQL password
-    private static final String PASSWORD = "root";
+    private static final String PASSWORD = "Oculus24!";
 
     // Private constructor
     private DBConnection() {
