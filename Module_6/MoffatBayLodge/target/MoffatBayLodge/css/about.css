@@ -1,0 +1,132 @@
+
+/*
+ * Moffat Bay Lodge
+ * CSD-460 Team Project
+ * About Us Page Styling
+ */
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #243746;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #164e63;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links a:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #164e63, #38b2ac);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Main Content */
+.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.content h2 {
+    color: #164e63;
+    margin-top: 30px;
+}
+
+.content h2:first-child {
+    margin-top: 0;
+}
+
+.content p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .content {
+        margin: 20px 15px;
+        padding: 25px;
+    }
+}
